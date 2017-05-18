@@ -14,7 +14,7 @@ namespace ReedAPI.Controllers
     public class CandidatesController : ApiController
     {
         //Use the factory to Mock the candidateServices 
-        private readonly ICanditateServices candidatesServices = BLLFactory.CreateCandidateServices();
+        private readonly ICanditateServices candidatesServices = BLLFactory.MockCandidateServices();
 
         [HttpGet]
         public IHttpActionResult GetAllCandidates()
