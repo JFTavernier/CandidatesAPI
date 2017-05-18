@@ -10,6 +10,7 @@ using Candidates.DAL.Entities;
 
 namespace Candidates.UnitTest
 {
+    //Don't Forget To Create the Database, Change the ConnectionString, And UnMock the DAL in CandidatesController before launching the test
     [TestClass]
     public class UnitTestDAL
     {
