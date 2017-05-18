@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.DAL", "Candidates.DAL\Candidates.DAL.csproj", "{2C295C4F-D75A-4A9F-B95E-E03C323C4729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.BLL", "Candidates.BLL\Candidates.BLL.csproj", "{2337A9E9-A31F-4295-A8EC-793B96F8EA30}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.Core", "Candidates.Core\Candidates.Core.csproj", "{DA68DFFA-46EC-4D77-BE27-1B9E69BAC3AE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Candidates.UnitTest", "Candidates.UnitTest\Candidates.UnitTest.csproj", "{A00B980E-3F4B-4B87-8BD5-F64578FE3C07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReedAPI", "ReedAPI\ReedAPI.csproj", "{BDB0AEB7-E577-4F31-81FD-39933B5E8EE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReedUI", "ReedUI\ReedUI.csproj", "{4DF09DCF-5AA2-4DAB-A84D-256B15688C62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C295C4F-D75A-4A9F-B95E-E03C323C4729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C295C4F-D75A-4A9F-B95E-E03C323C4729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C295C4F-D75A-4A9F-B95E-E03C323C4729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C295C4F-D75A-4A9F-B95E-E03C323C4729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2337A9E9-A31F-4295-A8EC-793B96F8EA30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2337A9E9-A31F-4295-A8EC-793B96F8EA30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2337A9E9-A31F-4295-A8EC-793B96F8EA30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2337A9E9-A31F-4295-A8EC-793B96F8EA30}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA68DFFA-46EC-4D77-BE27-1B9E69BAC3AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA68DFFA-46EC-4D77-BE27-1B9E69BAC3AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA68DFFA-46EC-4D77-BE27-1B9E69BAC3AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA68DFFA-46EC-4D77-BE27-1B9E69BAC3AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00B980E-3F4B-4B87-8BD5-F64578FE3C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00B980E-3F4B-4B87-8BD5-F64578FE3C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00B980E-3F4B-4B87-8BD5-F64578FE3C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00B980E-3F4B-4B87-8BD5-F64578FE3C07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BDB0AEB7-E577-4F31-81FD-39933B5E8EE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BDB0AEB7-E577-4F31-81FD-39933B5E8EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BDB0AEB7-E577-4F31-81FD-39933B5E8EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BDB0AEB7-E577-4F31-81FD-39933B5E8EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DF09DCF-5AA2-4DAB-A84D-256B15688C62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DF09DCF-5AA2-4DAB-A84D-256B15688C62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DF09DCF-5AA2-4DAB-A84D-256B15688C62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DF09DCF-5AA2-4DAB-A84D-256B15688C62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

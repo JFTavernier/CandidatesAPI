@@ -1,0 +1,45 @@
+﻿@{
+    ViewBag.Title = "Candidates API";
+}
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+    <script type="text/javascript">
+        function onCandidatesLoad() {
+            $("#CandidateDetails").hide();
+            $(".candidate").click(function () {
+                var idCandidate = $(this).attr("data-id");
+                $.post("@Url.Action("GetCandidateDetails","Home")",
+                    { id: idCandidate },
+                    function (data) {
+                        $("#CandidateDetails").empty();
+                        $("#CandidateDetails").append(data);
+                        $("#CandidateDetails").show();
+                    }
+           );
+            });
+        };
+    </script>
+}
+
+
+<div class="jumbotron">
+    @using (Ajax.BeginForm("GetCandidates", "Home", new AjaxOptions { HttpMethod = "POST", InsertionMode = InsertionMode.Replace, UpdateTargetId = "candidatesList" , OnSuccess = "onCandidatesLoad()",LoadingElementId="loader"}))
+    {
+        <div class="row">
+            @Html.Label("Find a candidate")
+            
+        </div>
+        <div class="row">
+            <input type="submit" value="Search Candidates" class="btn" id="searchButton" />
+        </div>
+    }
+</div>
+
+<div id="loader" style="display:none">
+    <img src="~/Images/ajax-loader.gif" />
+    Loading Candidates...
+</div>
+<div class="container" id="candidatesList">
+    @{ Html.RenderPartial("_ListCandidates", null);}
+</div>

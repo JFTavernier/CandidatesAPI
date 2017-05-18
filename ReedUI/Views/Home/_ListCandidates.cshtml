@@ -1,0 +1,45 @@
+﻿@using ReedUI.Models
+@using Candidates.Core.DTO
+@using System.Text.RegularExpressions
+
+@model ListCandidatesViewModels
+
+
+<div class="row">
+    <div class="col-md-5" >
+        @if (Model != null)
+        {
+            if (Model.Candidates != null)
+            {
+                <div class="row" id="nbCandidat">@Model.Candidates.Count Candidates</div>
+                <div class="row" id="colListCandidate">
+                    @foreach (CandidateDTO candidate in Model.Candidates)
+                    {
+                    <div class="row candidate" data-id="@candidate.Id">
+                        @Html.Label(candidate.Name)
+                        @if (candidate.Salary != "Not specified")
+                        {<text><br />Min @Html.Raw(candidate.Salary)</text>}
+                        @if (candidate.MostRecentEmployment != "Not specified")
+                        {<text><br />@candidate.MostRecentEmployment</text>}
+                        @if (candidate.MostRecentEmploymentDurationInYears != null)
+                        { <text>(@candidate.MostRecentEmploymentDurationInYears yrs)</text>}
+                        @if (candidate.CurrentLocation != "Not specified")
+                        {<text><br />@candidate.CurrentLocation</text>}
+                    </div>
+                    }
+                </div>
+    }
+
+    else
+    {
+                <div class="row">@Html.Label("No Match")</div>
+            }
+        }
+    </div>
+    @if (Model != null)
+    {
+        <div class="col-md-6 col-md-offset-1" id="CandidateDetails">
+
+        </div>
+    }
+</div>

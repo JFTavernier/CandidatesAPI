@@ -1,0 +1,148 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color:#f5f7fa;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#mainNavBar{
+    background-color:#005a9f;
+    color:white;
+}
+
+#mainNavBar .navbar-brand{
+    color:white;
+    font-size: 2.3rem;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 200;
+}
+
+#searchButton{
+    background-color:#f27007;
+    color:white;
+    font-size: 1.5rem;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 400;
+   padding-left:3%;
+   padding-right:3%;
+}
+
+.jumbotron{
+    line-height: 2.6666666666666665rem!important;
+    background-color:white;
+    border:2px solid #eaeaea;
+    height:17vh;
+    padding-top:20px;
+    min-height:110px;
+}
+
+.jumbotron label{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.row.candidate{
+    padding:8px;
+    padding-top:8px;
+    padding-left:50px;
+    border-bottom:2px solid #eaeaea;
+    margin-bottom:7px;
+    background-color:white;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+}
+
+.row.candidate:hover{
+    cursor:pointer;
+    background-color:#f5f7fa;
+}
+
+#loader{
+    background-color:white;
+    padding-left:45px;
+    margin-bottom:10px;
+    padding-bottom:7px;
+    padding-top:7px;
+      color:#0079d6;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size:2.0rem;
+    text-align:center;
+}
+
+#loader img{
+    padding:5px;
+    height:50px;
+}
+
+.row.candidate label{
+    color:#0079d6;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size:1.8rem;
+    margin-left:-15px;
+}
+
+
+#CandidateDetails
+{
+    background-color:white;
+    padding-left:45px;
+    padding-bottom:30px;
+    padding-top:20px;
+}
+
+#CandidateDetails label{
+    color:#e25b89;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size:2.5rem;
+    margin-left:-10px;
+}
+
+#labelSkill{
+    margin-top:-5px;
+    font-size:1.8rem!important;
+    font-weight: 600;
+    color:dimgray;
+      margin-top:25px;
+}
+
+#colListCandidate{
+    height:57vh;
+    overflow-y:auto;
+    overflow-x:hidden
+}
+
+#nbCandidat{
+     background-color:white;
+    padding-left:45px;
+    margin-bottom:10px;
+    padding-bottom:7px;
+    padding-top:7px;
+      color:#e25b89;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-size:2.0rem;
+   
+}

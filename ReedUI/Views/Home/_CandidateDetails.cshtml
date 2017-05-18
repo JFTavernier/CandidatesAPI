@@ -1,0 +1,23 @@
+﻿@using Candidates.Core.DTO
+
+@model CandidateDetailsDTO
+@if (Model != null)
+{
+    <div class="row">@Html.Label(Model.Name)</div>
+    if (Model.Salary != "Not specified")
+    {<text><br />Min @Html.Raw(Model.Salary)</text>}
+    if (Model.MostRecentEmployment != "Not specified")
+    {<text><br />@Model.MostRecentEmployment</text>}
+    if (Model.MostRecentEmploymentDurationInYears != null)
+    { <text>(@Model.MostRecentEmploymentDurationInYears yrs)</text>}
+    if (Model.CurrentLocation != "Not specified")
+    {<text><br />@Model.CurrentLocation</text>}
+    <hr />
+    <div class="row" id="labelSkill">Skills</div>
+    
+    foreach (string skill in Model.Skills)
+    {
+        <div class="row">@skill</div>
+    }
+    <hr />
+}
